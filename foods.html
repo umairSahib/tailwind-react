@@ -12,10 +12,10 @@
     <title>Foods</title>
 </head>
 <body>
-   <div class="w-[814px] h-[834px] bg-#1F1D2B p-[24px] flex gap-[10px]">
+   <div class="w-[814px] h-[834px] bg-#1F1D2B p-[24px] flex gap-[30px]">
     <div class=" flex-1 ">
         <i class="fa-solid fa-arrow-left text-[#FFFFFF]"></i>
-        <div class="flex gap-[150px] items-center mt-[16px] ">
+        <div class="flex gap-[132px] items-center mt-[16px] ">
             <div>
                 <h1 class="text-[#FFFFFF] font-barlow font-semibold text-[28px]">Confirmation</h1>
                 <h2 class="text-[#ABBBC2] font-barlow font-medium text-[16px] mt-[8px]">Orders #34562</h2>
@@ -24,7 +24,7 @@
                 <i class="fa-solid fa-plus text-[#FFFFFF]"></i>
             </button>
         </div>
-        <div class="border border-#393C49 mt-[24px]"></div>
+        <div class="border border-#393C49 mt-[24px] mr-[24px]"></div>
   
 
         <div class="mt-[24px]">
@@ -108,10 +108,64 @@
 
 
         <div class=" flex-1">
-            <h1 class="text-[28px] mt-[48px] font-barlow font-semibold text-#FFFFFF">Payement</h1>
+            <h1 class="text-[28px] mt-[40px] font-barlow font-semibold text-#FFFFFF">Payement</h1>
            
             <h2 class="text-[16px] mt-[8px] font-barlow font-semibold text-#ABBBC2">3 payment method available</h2>
-           
+            <div class="border border-#393C49 mt-[24px] mr-[24px] mb-[24px]"></div>
+            <h1 class="text-#FFFFFF font-barlow font-semi-bold text-[20px]">Payment Method</h1>
+         <div class="flex mt-[16px] gap-[8px]">
+            <button class="relative bg-[#1F1D2B] text-white w-[101px] h-[64px] p-3 rounded-lg font-barlow text-sm border border-[#ABBBC2] flex flex-col items-center justify-center hover-bg-#EA7C69">
+                <div class="flex justify-end w-full">
+                    <i class="fa-solid fa-circle-check text-#EA7C69 transform translate-y-[-50%] translate-x-[50%] hover-bg-#FFFFFF"></i> 
+                </div>
+                <i class="fa-solid fa-id-card mb-1"></i> 
+                <span class="self-center w-full text-center">Credit Card</span>
+            </button>
+             
+                <button class=" bg-[#1F1D2B] text-white w-[101px] h-[64px] p-3 rounded-lg font-barlow text-sm border border-[#ABBBC2] flex flex-col items-center justify-center hover-bg-#EA7C69 " style="padding:  16px, 10px, 16px;" >
+                  
+                  <i class="fa-brands fa-paypal text-#ABBBC2 text-2xl"></i>
+                    <span class="self-center w-full text-center text-#ABBBC2  font-barlow font-normal text-[14px]"><a href="">Paypal</a></span>
+                </button>
+                <button class=" bg-[#1F1D2B] text-white w-[101px] h-[64px] p-3 rounded-lg font-barlow text-sm border border-[#ABBBC2] flex flex-col items-center justify-center hover-bg-#EA7C69 " style="padding:  16px, 10px, 16px;" >
+                  
+                  <i class="fa-solid fa-wallet text-#ABBBC2 text-2xl"></i>
+                    <span class="self-center w-full text-center text-#ABBBC2  font-barlow font-normal text-[14px]"><a href="">Paypal</a></span>
+                </button>
+            </div>
+            <div class="mt-[16px]">
+                <h2 class="font-medium font-barlow text-[14px] text-#FFFFFF">Cardholder Name</h2>
+                <input type="text" placeholder="Levi Ackerman" class="w-[357px] h-[48px] rounded-[8px] p-[14px] border border-#393C49 bg-#2D303E mt-[8px]">
+             </div>
+            <div class="mt-[16px]">
+                <h2 class="font-[400] font-barlow text-[14px] text-#FFFFFF">Card Number</h2>
+                <input type="text" placeholder="2564 1421 0897 1244" class="w-[357px] h-[48px] text-#E0E6E9 rounded-[8px] p-[14px] border border-#393C49 bg-#2D303E mt-[8px]">
+             </div>
+            <div class="flex gap-[13px]">
+                <div class="mt-[16px]">
+                    <h2 class="font-[400] font-barlow text-[14px] text-#FFFFFF">Expiration Date</h2>
+                    <input type="number" placeholder="02/2022" class="w-[172px] h-[48px] text-#E0E6E9 rounded-[8px] p-[14px] border border-#393C49 bg-#2D303E mt-[8px]">
+                 </div>
+                <div class="mt-[16px]">
+                    <h2 class="font-[400] font-barlow text-[14px] text-#FFFFFF">CVV</h2>
+                    <input type="password" placeholder="..." class="w-[172px] h-[48px] text-#E0E6E9 rounded-[8px] p-[14px] border border-#393C49 bg-#2D303E mt-[8px]">
+                 </div>
+                
+            </div>
+            <div class="mt-[16px] border border-#393C49"></div>
+            <div class="flex gap-[13px]">
+                <div class="mt-[16px]">
+                    <h2 class="font-[400] font-barlow text-[14px] text-#FFFFFF">Order Type</h2>
+                    <button class="flex items-center mt[8px] whitespace-pre gap-[10px] bg-#1F1D2B text-#FFFFFF w-[172px] h-[48px] p-[14px] rounded-[8px] font-barlow font-normal text-medium hover-bg-#EA7C69 border border-#393C49"><i class="fa-solid fa-angle-down text-#FFFFFF"></i>Dine In</button>
+                </div>
+                <div class="mt-[16px]">
+                    <h2 class="font-[400] font-barlow text-[14px] text-#FFFFFF">Table no.</h2>
+                    <input type="password" placeholder="140" class="w-[172px] h-[48px] text-#E0E6E9 rounded-[8px] p-[14px] border border-#393C49 bg-#2D303E mt-[8px]">
+                 </div>
+                
+                </div>
+         </div>
+        
         </div>
     </div>
   
