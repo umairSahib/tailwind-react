@@ -3,176 +3,447 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css" rel="stylesheet"type="text/css"
+  />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1700;1,800;1,900&display=swap" rel="stylesheet">
-    
+  
+  
     <title>Foods</title>
 </head>
 <body>
-   <div class="w-[814px] h-[834px] bg-#1F1D2B p-[24px] flex gap-[30px]">
-    <div class=" flex-1 ">
-        <i class="fa-solid fa-arrow-left text-[#FFFFFF]"></i>
-        <div class="flex gap-[132px] items-center mt-[16px] ">
-            <div>
-                <h1 class="text-[#FFFFFF] font-barlow font-semibold text-[28px]">Confirmation</h1>
-                <h2 class="text-[#ABBBC2] font-barlow font-medium text-[16px] mt-[8px]">Orders #34562</h2>
+  <div class="drawer drawer-end">
+    <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content">
+      <div class=" flex ">
+        <div class=" sidebar bg-#1F1D2B rounded-xl" style="width: 104px; ">
+            <div class="grid grid-cols-1 " style="grid-template-rows: repeat(8, 102px); " >
+                <div class="flex items-center justify-center bg-#1F1D2B w-[92] h-[102]">
+                <div class="flex items-center justify-center bg-#1F1D2B rounded-tl-lg rounded-bl-lg" style="width: 92px; height: 80px;">
+                    <div class="flex items-center justify-center bg-#543C3B  rounded-lg p-16  " style="width: 56px; height: 56px; padding: 16px;">
+                    <i class="fas fa-shop text-4xl flex items-center justify-center text-#E97C68 cursor-pointer"></i>
+        
+        
+                   </div>
+                   </div>
+               </div>
+                <div class="flex items-center justify-center bg-#1F1D2B w-[92] h-[102]">
+                    <div class="flex items-center justify-center bg-#1F1D2B hover:bg-#252836 rounded-tl-lg rounded-bl-lg" style="width: 92px; height: 80px;">
+                        <div class="flex items-center justify-center rounded-xl bg-#EA7C69 rounded-lg active:bg-#f8fafc  hover:bg-gray-600 cursor-pointer" style="width: 56px; height: 56px; padding: 16px;" >
+                       <i class="fas fa-house text-4xl text-#f8fafc   flex items-center justify-center active:text-#EA7C69"></i>
+                     </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center bg-#1F1D2B w-[92] h-[102]">
+                    
+             <div class="flex items-center justify-center bg-#1F1D2B hover:bg-#252836 rounded-tl-lg rounded-bl-lg" style="width: 92px; height: 80px;">
+                <div class="flex items-center justify-center bg-#1F1D2B rounded-lg active:bg-#EA7C69 cursor-pointer" style="width: 56px; height: 56px; padding: 16px;">
+                    <i class="fas fa-circle-dollar-to-slot text-4xl text-#EA7C69 flex items-center justify-center active:text-#f8fafc" ></i>
+                </div>
+             </div>
+                </div>
+                <div class="flex items-center justify-center bg-#1F1D2B w-[92] h-[102]">
+                    <div class="flex items-center justify-center bg-#1F1D2B hover:bg-#252836 rounded-tl-lg rounded-bl-lg" style="width: 92px; height: 80px;">
+                        <div class="flex items-center justify-center bg-#1F1D2B rounded-lg active:bg-#EA7C69 cursor-pointer" style="width: 56px; height: 56px; padding: 16px;">
+                        <i class="fas fa-gauge text-4xl text-#EA7C69  flex items-center justify-center active:text-#f8fafc" ></i>
+                    </div>
+                 </div>
+                </div>
+                <div class="flex items-center justify-center bg-#1F1D2B w-[92] h-[102]">
+                    <div class="flex items-center justify-center bg-#1F1D2B hover:bg-#252836 rounded-tl-lg rounded-bl-lg" style="width: 92px; height: 80px;">
+                        <div class="flex items-center justify-center bg-#1F1D2B rounded-lg active:bg-#EA7C69  cursor-pointer" style="width: 56px; height: 56px; padding: 16px;">
+                           <i class="fas  fa-envelope text-4xl text-#EA7C69  flex items-center justify-center active:text-#f8fafc" ></i>
+                       </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center bg-#1F1D2B w-[92] h-[102]">
+                    <div class="flex items-center justify-center bg-#1F1D2B hover:bg-#252836 rounded-tl-lg rounded-bl-lg" style="width: 92px; height: 80px;">
+                        <div class="flex items-center justify-center bg-#1F1D2B rounded-lg active:bg-#EA7C69  cursor-pointer"  style="width: 56px; height: 56px; padding: 16px;">
+                       <i class="fas fa-bell text-4xl text-#EA7C69 flex items-center justify-center  active:text-#f8fafc"></i>
+                   </div>
+                </div>
+                   
+                </div>
+                <div class="flex items-center justify-center bg-#1F1D2B w-[92] h-[102]">
+                    <div class="flex items-center justify-center bg-#1F1D2B hover:bg-#252836 rounded-tl-lg rounded-bl-lg" style="width: 92px; height: 80px;">
+                        <div class="flex items-center justify-center  bg-#1F1D2B rounded-lg   active:bg-#EA7C69 cursor-pointer" style="width: 56px; height: 56px; padding: 16px;">
+                            <i class="fas  fa-gear text-4xl text-#EA7C69  flex items-center justify-center active:text-#f8fafc" ></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center bg-#1F1D2B" style="width: 92px; height: 102px;">
+                    <div class="flex items-center justify-center bg-#1F1D2B hover:bg-#252836 rounded-tl-lg rounded-bl-lg " style="width: 92px; height: 80px;">
+                        <div class="flex items-center justify-center bg-#1F1D2B rounded-lg  active:bg-#EA7C69 cursor-pointer"  style="width: 56px; height: 56px; padding: 16px;">
+    
+                            <i class="fas fa-right-from-bracket text-4xl text-#EA7C69  flex items-center justify-center active:text-#f8fafc"></i>
+                        </div>
+                       </div>
+                </div>
+                      
             </div>
-            <button class="bg-[#EA7C69] w-[48px] h-[48px] p-[14px] rounded-[8px] hover:bg-[#50343a]">
-                <i class="fa-solid fa-plus text-[#FFFFFF]"></i>
-            </button>
+            
+    
         </div>
-        <div class="border border-#393C49 mt-[24px] mr-[24px]"></div>
-  
-
-        <div class="mt-[24px]">
-            <div class="flex gap-[10px] w-[361px] h-[48px] items-center">
-              <img src="images/image(1).png" alt="image" class="w-[40px] h-[40px] ">
-               <div class="">
-                <h1 class="text-#FFFFFF font-barlow font-medium text-sm">Spicy seasoned sea...</h1>
-                <h2 class="text-#889898 font-medium font-barlow text-[12px]"> $ 2.29</h2>
-               </div>
-              <div class="flex gap-[13px]">
-                <input type="text" class=" bg-#2D303E w-[48px] h-[48px] px-4 rounded-[8px] text-#889898 ml-[55px] placeholder-gray-500" placeholder="2">
-      
-                <h2 class="text-#FFFFFF flex items-center ">$ 4,58</h2>
-          
-              </div>
-             </div>
-             <div class="flex  gap-[16px] mt-[10px] ">
-              <input type="text" class="bg-gray-800 w-auto h-12 rounded-md border border-gray-700 text-gray-300 font-barlow text-md pl-3 pr-24 placeholder-gray-500" placeholder="Please, just a little bit spicy only.">
-              <button class=" bg-#1F1D2B w-[48px] h-[48px] p-[14px] rounded-[8px] border-1 border-#FF7CA3 hover:bg-#50343a"><i class="fa-solid fa-trash-can text-#FF7CA3 text-normal"></i></button>
+        <div class="bg-#252836 w-[633px] h-[1046px] pt-[24px] pl-[24px] pr-[24px]">
+            <div class="flex justify-between items-center">
+                <div class="">
+                    <h1 class="font-barlow font-semi-bold text-#FFFFFF text-[28px]">Jaegar Resto</h1>
+                    <h2 class="font-barlow font-[400] text-[16px] text-#E0E6E9 mt-[4px]">Tuesday, 2 Feb 2021</h2>
+                </div>
+                <div class=" flex items-center p-[14px] bg-#2D303E w-[220px] h-[48px] rounded-[8px] border border-#393C49">
+                    <button class="flex gap-[8px] items-center"><i class="fa-solid fa-magnifying-glass text-#FFFFFF"></i>
+                    <h2 class="font-barlow font-[400] text-[14px] text-#ABBBC2">Search for food, coffe, etc..</h2></button>
+                  </div>
             </div>
-          </div>
-          <div class="mt-[24px]">
-            <div class="flex gap-[10px] w-[361px] h-[48px] items-center">
-              <img src="images/image(2).png" alt="image" class="w-[40px] h-[40px] ">
-               <div class="">
-                <h1 class="text-#FFFFFF font-barlow font-medium text-sm whitespace-pre">Salted pasta with mu...</h1>
-                <h2 class="text-#889898 font-medium font-barlow text-[12px] "> $ 2.69</h2>
-               </div>
-               <input type="text" class=" bg-#2D303E w-[48px] h-[48px] px-4 rounded-[8px] text-#889898 ml-[42px] placeholder-gray-500" placeholder="1">
-               <h2 class="text-#FFFFFF flex items-center whitespace-pre">$ 2.69</h2>
-          
-             </div>
-             <div class="flex  gap-[16px] mt-[10px] ">
-              <input type="text" class="bg-gray-800 w-72 h-12 rounded-md border border-gray-700 text-gray-300 font-barlow text-md pl-3 pr-24 placeholder-gray-500" placeholder="Order Note...">
-      
-              <button class="flex items-center justify-center bg-#1F1D2B w-[48px] h-[48px] p-[14px] rounded-[8px] border-1 border-#FF7CA3 hover:bg-#50343a"><i class="fa-solid fa-trash-can text-#FF7CA3 text-normal"></i></button>
+            <div class="flex gap-[32px] mt-[24px] border-b border-#393C49">
+                <button class="text-#EA7C69 font-barlow font-[600] text-[14px] border-b-2 border-#EA7C69"> <a href="">Hot Dishes</a></button>
+                <button class="text-#FFFFFF font-barlow font-[600] text-[14px]"> <a href="">Cold Dishes</a></button>
+                <button class="text-#FFFFFF font-barlow font-[600] text-[14px]"> <a href="">Soup</a></button>
+                <button class="text-#FFFFFF font-barlow font-[600] text-[14px]"> <a href="">Grill</a></button>
+                <button class="text-#FFFFFF font-barlow font-[600] text-[14px]"> <a href="">Appetizer</a></button>
+                <button class="text-#FFFFFF font-barlow font-[600] text-[14px]"> <a href="">Dessert</a></button>
             </div>
-          </div>
-          <div class="mt-[24px]">
-            <div class="flex gap-[10px] w-[361px] h-[48px] items-center">
-              <img src="images/image(6).png" alt="image" class="w-[40px] h-[40px] ">
-               <div class="">
-                <h1 class="text-#FFFFFF font-barlow font-medium text-sm whitespace-pre">Spicy instant noodle...</h1>
-                <h2 class="text-#889898 font-medium font-barlow text-[12px]"> $ 3.49</h2>
-               </div>
-               <input type="text" class=" bg-#2D303E w-[48px] h-[48px] px-4 rounded-[8px] text-#889898 ml-[46px] placeholder-gray-500" placeholder="3">
-               <h2 class="text-#FFFFFF flex items-center whitespace-pre ">$ 10,47</h2>
-          
-             </div>
-             <div class="flex  gap-[16px] mt-[10px] ">
-              <input type="text" class="bg-gray-800 w-72 h-12 rounded-md border border-gray-700 text-gray-300 font-barlow text-md pl-3 pr-24 placeholder-gray-500" placeholder="Order Note...">
-              <button class="flex items-center justify-center bg-#1F1D2B w-[48px] h-[48px] p-[14px] rounded-[8px] border-1 border-#FF7CA3 hover:bg-#50343a"><i class="fa-solid fa-trash-can text-#FF7CA3 text-normal"></i></button>
+            <div class="mt-[24px] flex justify-between items-center">
+                <h1 class="text-#FFFFFF text-[20px] font-barlow font-semi-bold">Choose Dishes</h1>
+                <button class="flex items-center justify-center whitespace-pre gap-[10px] bg-#1F1D2B text-#FFFFFF w-[100px] h-[48px] p-[14px] rounded-[8px] font-barlow font-normal text-medium hover-bg-#EA7C69"><i class="fa-solid fa-angle-down text-#FFFFFF"></i><a href="">Dine In</a></button>
             </div>
-          </div>
-          <div class="mt-[24px]">
-            <div class="flex gap-[10px] w-[361px] h-[48px] items-center">
-              <img src="images/image(6).png" alt="image" class="w-[40px] h-[40px] ">
-               <div class="">
-                <h1 class="text-#FFFFFF font-barlow font-medium text-sm whitespace-pre">Healthy noodle with ...</h1>
-                <h2 class="text-#889898 font-medium font-barlow text-[12px]"> $ 3.29</h2>
-               </div>
-               <input type="text" class=" bg-#2D303E w-[48px] h-[48px] px-4 rounded-[8px] text-#889898 ml-[42px] placeholder-gray-500" placeholder="1">
-               <h2 class="text-#FFFFFF flex items-center whitespace-pre ">$ 3.29</h2>
+    
+            <div class="mt-[64px] flex gap-[18px]">
+                <div class=" bg-#1F1D2B rounded-[18px]  w-[182px] h-[226px] flex flex-col items-center">
+                    <div class="w-[182px] h-[226px] flex justify-center items-center -mt-[50px]">
+                      <img src="images/image(1).png" alt="image" class="rounded-t-lg w-[132px] h-[132px] object-cover" />
+                    </div>
+                  
+                    <div class="mt-[16px] flex justify-center text-#FFFFFF font-barlow font-medium text-sm">Spicy seasoned</div>
+                    <div class="mt-[0px] flex justify-center text-#FFFFFF font-barlow font-medium text-sm">seafood noodles</div>
+                    <div class="mt-[8px] flex justify-center text-#FFFFFF font-barlow font-normal text-sm">$ 2.29</div>
+                    <div class="mt-[4px] mb-[24px] flex justify-center text-#ABBBC2 font-barlow font-normal text-sm">20 Bowls available</div>
+                  </div>
+    
+                  <div class=" bg-#1F1D2B rounded-[18px] w-[182px] h-[226px] flex flex-col items-center">
+                    <div class="w-[182px] h-[226px] flex justify-center items-center -mt-[50px]">
+                      <img src="images/image(2).png" alt="image" class="rounded-t-lg w-[132px] h-[132px] object-cover" />
+                    </div>
+                  
+                    <div class=" flex justify-center text-#FFFFFF font-barlow font-medium text-sm">Salted Pasta with </div>
+                    <div class="mt-[0px] flex justify-center text-#FFFFFF font-barlow font-medium text-sm">mushroom sauce</div>
+                    <div class="mt-[8px] flex justify-center text-#FFFFFF font-barlow font-normal text-sm">$ 2.69</div>
+                    <div class="mt-[4px] mb-[24px] flex justify-center text-#ABBBC2 font-barlow font-normal text-sm">11 Bowls available</div>
+                  </div>
+        
+                  <div class=" bg-#1F1D2B rounded-[18px]  w-[182px] h-[226px] flex flex-col items-center">
+                    <div class="w-[182px] h-[226px] flex justify-center items-center -mt-[50px]">
+                      <img src="images/images.png" alt="image" class="rounded-t-lg w-[132px] h-[132px] object-cover" />
+                    </div>
+                  
+                    <div class=" flex justify-center text-#FFFFFF font-barlow font-medium text-sm">Beef dumpling in hot </div>
+                    <div class="mt-[0px] flex justify-center text-#FFFFFF font-barlow font-medium text-sm">and sour soup</div>
+                    <div class="mt-[8px] flex justify-center text-#FFFFFF font-barlow font-normal text-sm">$ 2.99</div>
+                    <div class="mt-[4px] mb-[24px] flex justify-center text-#ABBBC2 font-barlow font-normal text-sm">16 Bowls available</div>
+                  </div>
+                  
+                  
+            </div>
+            <div class="mt-[64px] flex gap-[18px]">
+                <div class=" bg-#1F1D2B rounded-[18px]  w-[182px] h-[226px] flex flex-col items-center">
+                    <div class="w-[182px] h-[226px] flex justify-center items-center -mt-[50px]">
+                      <img src="images/images(4).png" alt="image" class="rounded-t-lg w-[132px] h-[132px] object-cover" />
+                    </div>
+                  
+                    <div class="mt-[16px] flex justify-center text-#FFFFFF font-barlow font-medium text-sm">Healthy noodle with </div>
+                    <div class="mt-[0px] flex justify-center text-#FFFFFF font-barlow font-medium text-sm">spinach leaf</div>
+                    <div class="mt-[8px] flex justify-center text-#FFFFFF font-barlow font-normal text-sm">$ 3.29</div>
+                    <div class="mt-[4px] mb-[24px] flex justify-center text-#ABBBC2 font-barlow font-normal text-sm">22 Bowls available</div>
+                  </div>
+    
+                  <div class=" bg-#1F1D2B rounded-[18px]  w-[182px] h-[226px] flex flex-col items-center">
+                    <div class="w-[182px] h-[226px] flex justify-center items-center -mt-[50px]">
+                      <img src="images/images(4).png" alt="image" class="rounded-t-lg w-[132px] h-[132px] object-cover" />
+                    </div>
+                  
+                    <div class=" flex justify-center text-#FFFFFF font-barlow font-medium text-sm">Hot spicy fried rice  </div>
+                    <div class="mt-[0px] flex justify-center text-#FFFFFF font-barlow font-medium text-sm">with omelet</div>
+                    <div class="mt-[8px] flex justify-center text-#FFFFFF font-barlow font-normal text-sm">$ 3.49</div>
+                    <div class="mt-[4px] mb-[24px] flex justify-center text-#ABBBC2 font-barlow font-normal text-sm">13 Bowls available</div>
+                  </div>
+        
+                  <div class=" bg-#1F1D2B rounded-[18px]  w-[182px] h-[226px] flex flex-col items-center">
+                    <div class="w-[182px] h-[226px] flex justify-center items-center -mt-[50px]">
+                      <img src="images/image(6).png" alt="image" class="rounded-t-lg w-[132px] h-[132px] object-cover" />
+                    </div>
+                  
+                    <div class=" flex justify-center text-#FFFFFF font-barlow font-medium text-sm">Spicy instant noodle </div>
+                    <div class="mt-[0px] flex justify-center text-#FFFFFF font-barlow font-medium text-sm">with special omelette</div>
+                    <div class="mt-[8px] flex justify-center text-#FFFFFF font-barlow font-normal text-sm">$ 3.59</div>
+                    <div class="mt-[4px] mb-[24px] flex justify-center text-#ABBBC2 font-barlow font-normal text-sm">17 Bowls available</div>
+                  </div>
+                  
+                  
+            </div>
+            
+    
+      </div>
+      <div class="bg-#1F1D2B w-[409px] h-[834px] rounded-tr-8 rounded-br-8 pt-[24px] pl-[24px] pr-[24px]">
+        <h1 class="font-barlow font-semi-bold text-[20px] text-#FFFFFF">Orders #34562</h1>
+        <div class="flex gap-[8px] mt-[24px]">
+          <button class="flex items-center justify-center bg-#EA7C69 w-[66px] h-[34px] rounded-[8px] font-barlow font-normal text-semi-bold text-#FFFFFF hover:bg-#50343a" style="padding: 7px, 12px, 7px, 12px;"><a href="/">Dine In</a></button>
+          <button class="flex items-center justify-center bg-#1F1D2B w-[58px] h-[34px] rounded-[8px] border-2 border-#393C49 font-barlow font-normal text-semi-bold text-#EA7C69 hover-bg-#EA7C69 hover-text-#FFFFFF" style="padding: 7px, 12px, 7px, 12px;"><a href="/">To Go</a></button>
+          <button class="flex items-center justify-center bg-#1F1D2B w-[74px] h-[34px] rounded-[8px] border-2 border-#393C49 font-barlow font-normal text-semi-bold text-#EA7C69 hover-bg-#EA7C69 hover-text-#FFFFFF" style="padding: 7px, 12px, 7px, 12px;"><a href="/">Delivery</a></button>
+        </div>
+        <div class="flex justify-between mt-[24px]">
+           <h2 class="font-semi-bold font-barlow text-#FFFFFF text-[16px]">Item</h2>
+           <div class="flex gap-[43px]">
+            <h2 class="font-semi-bold font-barlow text-#FFFFFF text-[16px]">Qty</h2>
+            <h2 class="font-semi-bold font-barlow text-#FFFFFF text-[16px]">Price</h2>
            </div>
-           <div class="flex  gap-[16px] mt-[10px] ">
+        </div>
+        <div class="mt-[24px] border border-#393C49"></div>
+        <div class="mt-[24px]">
+          <div class="flex gap-[10px] w-[361px] h-[48px] items-center">
+            <img src="images/image(1).png" alt="image" class="w-[40px] h-[40px] ">
+             <div class="">
+              <h1 class="text-#FFFFFF font-barlow font-medium text-sm">Spicy seasoned sea...</h1>
+              <h2 class="text-#889898 font-medium font-barlow text-[12px]"> $ 2.29</h2>
+             </div>
+            <div class="flex gap-[13px]">
+              <input type="text" class=" bg-#2D303E w-[48px] h-[48px] px-4 rounded-[8px] text-#889898 ml-[55px] placeholder-gray-500" placeholder="2">
+    
+              <h2 class="text-#FFFFFF flex items-center ">$ 4,58</h2>
+        
+            </div>
+           </div>
+           <div class="flex justify-center gap-[16px] mt-[10px] ">
+            <input type="text" class="bg-gray-800 w-auto h-12 rounded-md border border-gray-700 text-gray-300 font-barlow text-md pl-3 pr-24 placeholder-gray-500" placeholder="Please, just a little bit spicy only.">
+            <button class=" bg-#1F1D2B w-[48px] h-[48px] p-[14px] rounded-[8px] border-1 border-#FF7CA3 hover:bg-#50343a"><i class="fa-solid fa-trash-can text-#FF7CA3 text-normal"></i></button>
+          </div>
+        </div>
+        <div class="mt-[24px]">
+          <div class="flex gap-[10px] w-[361px] h-[48px] items-center">
+            <img src="images/image(2).png" alt="image" class="w-[40px] h-[40px] ">
+             <div class="">
+              <h1 class="text-#FFFFFF font-barlow font-medium text-sm whitespace-pre">Salted pasta with mu...</h1>
+              <h2 class="text-#889898 font-medium font-barlow text-[12px] "> $ 2.69</h2>
+             </div>
+             <input type="text" class=" bg-#2D303E w-[48px] h-[48px] px-4 rounded-[8px] text-#889898 ml-[42px] placeholder-gray-500" placeholder="1">
+             <h2 class="text-#FFFFFF flex items-center whitespace-pre">$ 2.69</h2>
+        
+           </div>
+           <div class="flex justify-center gap-[16px] mt-[10px] ">
+            <input type="text" class="bg-gray-800 w-72 h-12 rounded-md border border-gray-700 text-gray-300 font-barlow text-md pl-3 pr-24 placeholder-gray-500" placeholder="Order Note...">
+    
+            <button class="flex items-center justify-center bg-#1F1D2B w-[48px] h-[48px] p-[14px] rounded-[8px] border-1 border-#FF7CA3 hover:bg-#50343a"><i class="fa-solid fa-trash-can text-#FF7CA3 text-normal"></i></button>
+          </div>
+        </div>
+        <div class="mt-[24px]">
+          <div class="flex gap-[10px] w-[361px] h-[48px] items-center">
+            <img src="images/image(6).png" alt="image" class="w-[40px] h-[40px] ">
+             <div class="">
+              <h1 class="text-#FFFFFF font-barlow font-medium text-sm whitespace-pre">Spicy instant noodle...</h1>
+              <h2 class="text-#889898 font-medium font-barlow text-[12px]"> $ 3.49</h2>
+             </div>
+             <input type="text" class=" bg-#2D303E w-[48px] h-[48px] px-4 rounded-[8px] text-#889898 ml-[46px] placeholder-gray-500" placeholder="3">
+             <h2 class="text-#FFFFFF flex items-center whitespace-pre ">$ 10,47</h2>
+        
+           </div>
+           <div class="flex justify-center gap-[16px] mt-[10px] ">
             <input type="text" class="bg-gray-800 w-72 h-12 rounded-md border border-gray-700 text-gray-300 font-barlow text-md pl-3 pr-24 placeholder-gray-500" placeholder="Order Note...">
             <button class="flex items-center justify-center bg-#1F1D2B w-[48px] h-[48px] p-[14px] rounded-[8px] border-1 border-#FF7CA3 hover:bg-#50343a"><i class="fa-solid fa-trash-can text-#FF7CA3 text-normal"></i></button>
           </div>
-          </div>
-          <div class="border border-#393C49 mt-[24px] mb-[24px]"></div>
-          <div class="flex gap-[275px] mt-[24px]">
-            <h2 class="text-#ABBBC2 font-barlow font-[400] text-[14px] ">Discount</h2> 
-            <h2 class="font-barlow font-semi-bold text-#FFFFFF text-[16px]">$0</h2> 
-          </div>
-          <div class="flex gap-[243px]  mt-[16px]">
-            <h2 class="text-#ABBBC2 font-barlow font-[400] text-[14px] ">Sub total</h2> 
-            <h2 class="font-barlow font-semi-bold text-#FFFFFF text-[16px]"> $ 21,03</h2> 
-          </div>
-         
         </div>
-
-
-        <div class=" flex-1">
-            <h1 class="text-[28px] mt-[40px] font-barlow font-semibold text-#FFFFFF">Payement</h1>
-           
-            <h2 class="text-[16px] mt-[8px] font-barlow font-semibold text-#ABBBC2">3 payment method available</h2>
-            <div class="border border-#393C49 mt-[24px] mr-[24px] mb-[24px]"></div>
-            <h1 class="text-#FFFFFF font-barlow font-semi-bold text-[20px]">Payment Method</h1>
-         <div class="flex mt-[16px] gap-[8px]">
-            <button class="relative bg-[#1F1D2B] text-white w-[101px] h-[64px] p-3 rounded-lg font-barlow text-sm border border-[#ABBBC2] flex flex-col items-center justify-center hover-bg-#EA7C69">
-                <div class="flex justify-end w-full">
-                    <i class="fa-solid fa-circle-check text-#EA7C69 transform translate-y-[-50%] translate-x-[50%] hover-bg-#FFFFFF"></i> 
-                </div>
-                <i class="fa-solid fa-id-card mb-1"></i> 
-                <span class="self-center w-full text-center">Credit Card</span>
-            </button>
-             
-                <button class=" bg-[#1F1D2B] text-white w-[101px] h-[64px] p-3 rounded-lg font-barlow text-sm border border-[#ABBBC2] flex flex-col items-center justify-center hover-bg-#EA7C69 " style="padding:  16px, 10px, 16px;" >
-                  
-                  <i class="fa-brands fa-paypal text-#ABBBC2 text-2xl"></i>
-                    <span class="self-center w-full text-center text-#ABBBC2  font-barlow font-normal text-[14px]"><a href="">Paypal</a></span>
-                </button>
-                <button class=" bg-[#1F1D2B] text-white w-[101px] h-[64px] p-3 rounded-lg font-barlow text-sm border border-[#ABBBC2] flex flex-col items-center justify-center hover-bg-#EA7C69 " style="padding:  16px, 10px, 16px;" >
-                  
-                  <i class="fa-solid fa-wallet text-#ABBBC2 text-2xl"></i>
-                    <span class="self-center w-full text-center text-#ABBBC2  font-barlow font-normal text-[14px]"><a href="">Paypal</a></span>
-                </button>
-            </div>
-            <div class="mt-[16px]">
-                <h2 class="font-medium font-barlow text-[14px] text-#FFFFFF">Cardholder Name</h2>
-                <input type="text" placeholder="Levi Ackerman" class="w-[357px] h-[48px] rounded-[8px] p-[14px] border border-#393C49 bg-#2D303E mt-[8px]">
+        <div class="mt-[24px]">
+          <div class="flex gap-[10px] w-[361px] h-[48px] items-center">
+            <img src="images/image(6).png" alt="image" class="w-[40px] h-[40px] ">
+             <div class="">
+              <h1 class="text-#FFFFFF font-barlow font-medium text-sm whitespace-pre">Healthy noodle with ...</h1>
+              <h2 class="text-#889898 font-medium font-barlow text-[12px]"> $ 3.29</h2>
              </div>
-            <div class="mt-[16px]">
-                <h2 class="font-[400] font-barlow text-[14px] text-#FFFFFF">Card Number</h2>
-                <input type="text" placeholder="2564 1421 0897 1244" class="w-[357px] h-[48px] text-#E0E6E9 rounded-[8px] p-[14px] border border-#393C49 bg-#2D303E mt-[8px]">
-             </div>
-            <div class="flex gap-[13px]">
-                <div class="mt-[16px]">
-                    <h2 class="font-[400] font-barlow text-[14px] text-#FFFFFF">Expiration Date</h2>
-                    <input type="number" placeholder="02/2022" class="w-[172px] h-[48px] text-#E0E6E9 rounded-[8px] p-[14px] border border-#393C49 bg-#2D303E mt-[8px]">
-                 </div>
-                <div class="mt-[16px]">
-                    <h2 class="font-[400] font-barlow text-[14px] text-#FFFFFF">CVV</h2>
-                    <input type="password" placeholder="..." class="w-[172px] h-[48px] text-#E0E6E9 rounded-[8px] p-[14px] border border-#393C49 bg-#2D303E mt-[8px]">
-                 </div>
-                
-            </div>
-            <div class="mt-[16px] border border-#393C49"></div>
-            <div class="flex gap-[13px]">
-                <div class="mt-[16px]">
-                    <h2 class="font-[400] font-barlow text-[14px] text-#FFFFFF">Order Type</h2>
-                    <button class="flex items-center mt[8px] whitespace-pre gap-[10px] bg-#1F1D2B text-#FFFFFF w-[172px] h-[48px] p-[14px] rounded-[8px] font-barlow font-normal text-medium hover-bg-#EA7C69 border border-#393C49"><i class="fa-solid fa-angle-down text-#FFFFFF"></i>Dine In</button>
-                </div>
-                <div class="mt-[16px]">
-                    <h2 class="font-[400] font-barlow text-[14px] text-#FFFFFF">Table no.</h2>
-                    <input type="password" placeholder="140" class="w-[172px] h-[48px] text-#E0E6E9 rounded-[8px] p-[14px] border border-#393C49 bg-#2D303E mt-[8px]">
-                 </div>
-                
-                </div>
+             <input type="text" class=" bg-#2D303E w-[48px] h-[48px] px-4 rounded-[8px] text-#889898 ml-[42px] placeholder-gray-500" placeholder="1">
+             <h2 class="text-#FFFFFF flex items-center whitespace-pre ">$ 3.29</h2>
          </div>
-        
         </div>
+        <div class="flex justify-between mt-[24px]">
+          <h2 class="text-#ABBBC2 font-barlow font-[400] text-[14px] ">Discount</h2> 
+          <h2 class="font-barlow font-semi-bold text-#FFFFFF text-[16px]">$0</h2> 
+        </div>
+        <div class="flex justify-between mt-[16px]">
+          <h2 class="text-#ABBBC2 font-barlow font-[400] text-[14px] ">Sub total</h2> 
+          <h2 class="font-barlow font-semi-bold text-#FFFFFF text-[16px]"> $ 21,03</h2> 
+        </div>
+        <div class="w-[361px] h-[48px] bg-#EA7C69 p-[14px] rounded-[8px] flex items-center justify-center mt-[42px] hover:bg-#50343a">
+          <button class="text-#FAFAFA font-barlow font-semi-bold ">Continue to Payment</button>
+        </div>
+      </div>
     </div>
-  
-
- 
+     
+      <label for="my-drawer-4" class="drawer-button btn btn-primary">Open drawer</label>
+    </div> 
+    <div class="drawer-side">
+      <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+      <div class="w-[814px] h-[834px] bg-#1F1D2B p-[24px] flex gap-[30px]">
+        <div class=" flex-1 ">
+            <i class="fa-solid fa-arrow-left text-[#FFFFFF]"></i>
+            <div class="flex gap-[132px] items-center mt-[16px] ">
+                <div>
+                    <h1 class="text-[#FFFFFF] font-barlow font-semibold text-[28px]">Confirmation</h1>
+                    <h2 class="text-[#ABBBC2] font-barlow font-medium text-[16px] mt-[8px]">Orders #34562</h2>
+                </div>
+                <button class="bg-[#EA7C69] w-[48px] h-[48px] p-[14px] rounded-[8px] hover:bg-[#50343a]">
+                    <i class="fa-solid fa-plus text-[#FFFFFF]"></i>
+                </button>
+            </div>
+            <div class="border border-#393C49 mt-[24px] mr-[24px]"></div>
       
-    <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
+    
+            <div class="mt-[24px]">
+                <div class="flex gap-[10px] w-[361px] h-[48px] items-center">
+                  <img src="images/image(1).png" alt="image" class="w-[40px] h-[40px] ">
+                   <div class="">
+                    <h1 class="text-#FFFFFF font-barlow font-medium text-sm">Spicy seasoned sea...</h1>
+                    <h2 class="text-#889898 font-medium font-barlow text-[12px]"> $ 2.29</h2>
+                   </div>
+                  <div class="flex gap-[13px]">
+                    <input type="text" class=" bg-#2D303E w-[48px] h-[48px] px-4 rounded-[8px] text-#889898 ml-[55px] placeholder-gray-500" placeholder="2">
+          
+                    <h2 class="text-#FFFFFF flex items-center ">$ 4,58</h2>
+              
+                  </div>
+                 </div>
+                 <div class="flex  gap-[16px] mt-[10px] ">
+                  <input type="text" class="bg-gray-800 w-auto h-12 rounded-md border border-gray-700 text-gray-300 font-barlow text-md pl-3 pr-24 placeholder-gray-500" placeholder="Please, just a little bit spicy only.">
+                  <button class=" bg-#1F1D2B w-[48px] h-[48px] p-[14px] rounded-[8px] border-1 border-#FF7CA3 hover:bg-#50343a"><i class="fa-solid fa-trash-can text-#FF7CA3 text-normal"></i></button>
+                </div>
+              </div>
+              <div class="mt-[24px]">
+                <div class="flex gap-[10px] w-[361px] h-[48px] items-center">
+                  <img src="images/image(2).png" alt="image" class="w-[40px] h-[40px] ">
+                   <div class="">
+                    <h1 class="text-#FFFFFF font-barlow font-medium text-sm whitespace-pre">Salted pasta with mu...</h1>
+                    <h2 class="text-#889898 font-medium font-barlow text-[12px] "> $ 2.69</h2>
+                   </div>
+                   <input type="text" class=" bg-#2D303E w-[48px] h-[48px] px-4 rounded-[8px] text-#889898 ml-[42px] placeholder-gray-500" placeholder="1">
+                   <h2 class="text-#FFFFFF flex items-center whitespace-pre">$ 2.69</h2>
+              
+                 </div>
+                 <div class="flex  gap-[16px] mt-[10px] ">
+                  <input type="text" class="bg-gray-800 w-72 h-12 rounded-md border border-gray-700 text-gray-300 font-barlow text-md pl-3 pr-24 placeholder-gray-500" placeholder="Order Note...">
+          
+                  <button class="flex items-center justify-center bg-#1F1D2B w-[48px] h-[48px] p-[14px] rounded-[8px] border-1 border-#FF7CA3 hover:bg-#50343a"><i class="fa-solid fa-trash-can text-#FF7CA3 text-normal"></i></button>
+                </div>
+              </div>
+              <div class="mt-[24px]">
+                <div class="flex gap-[10px] w-[361px] h-[48px] items-center">
+                  <img src="images/image(6).png" alt="image" class="w-[40px] h-[40px] ">
+                   <div class="">
+                    <h1 class="text-#FFFFFF font-barlow font-medium text-sm whitespace-pre">Spicy instant noodle...</h1>
+                    <h2 class="text-#889898 font-medium font-barlow text-[12px]"> $ 3.49</h2>
+                   </div>
+                   <input type="text" class=" bg-#2D303E w-[48px] h-[48px] px-4 rounded-[8px] text-#889898 ml-[46px] placeholder-gray-500" placeholder="3">
+                   <h2 class="text-#FFFFFF flex items-center whitespace-pre ">$ 10,47</h2>
+              
+                 </div>
+                 <div class="flex  gap-[16px] mt-[10px] ">
+                  <input type="text" class="bg-gray-800 w-72 h-12 rounded-md border border-gray-700 text-gray-300 font-barlow text-md pl-3 pr-24 placeholder-gray-500" placeholder="Order Note...">
+                  <button class="flex items-center justify-center bg-#1F1D2B w-[48px] h-[48px] p-[14px] rounded-[8px] border-1 border-#FF7CA3 hover:bg-#50343a"><i class="fa-solid fa-trash-can text-#FF7CA3 text-normal"></i></button>
+                </div>
+              </div>
+              <div class="mt-[24px]">
+                <div class="flex gap-[10px] w-[361px] h-[48px] items-center">
+                  <img src="images/image(6).png" alt="image" class="w-[40px] h-[40px] ">
+                   <div class="">
+                    <h1 class="text-#FFFFFF font-barlow font-medium text-sm whitespace-pre">Healthy noodle with ...</h1>
+                    <h2 class="text-#889898 font-medium font-barlow text-[12px]"> $ 3.29</h2>
+                   </div>
+                   <input type="text" class=" bg-#2D303E w-[48px] h-[48px] px-4 rounded-[8px] text-#889898 ml-[42px] placeholder-gray-500" placeholder="1">
+                   <h2 class="text-#FFFFFF flex items-center whitespace-pre ">$ 3.29</h2>
+               </div>
+               <div class="flex  gap-[16px] mt-[10px] ">
+                <input type="text" class="bg-gray-800 w-72 h-12 rounded-md border border-gray-700 text-gray-300 font-barlow text-md pl-3 pr-24 placeholder-gray-500" placeholder="Order Note...">
+                <button class="flex items-center justify-center bg-#1F1D2B w-[48px] h-[48px] p-[14px] rounded-[8px] border-1 border-#FF7CA3 hover:bg-#50343a"><i class="fa-solid fa-trash-can text-#FF7CA3 text-normal"></i></button>
+              </div>
+              </div>
+              <div class="border border-#393C49 mt-[24px] mb-[24px]"></div>
+              <div class="flex gap-[275px] mt-[24px]">
+                <h2 class="text-#ABBBC2 font-barlow font-[400] text-[14px] ">Discount</h2> 
+                <h2 class="font-barlow font-semi-bold text-#FFFFFF text-[16px]">$0</h2> 
+              </div>
+              <div class="flex gap-[243px]  mt-[16px]">
+                <h2 class="text-#ABBBC2 font-barlow font-[400] text-[14px] ">Sub total</h2> 
+                <h2 class="font-barlow font-semi-bold text-#FFFFFF text-[16px]"> $ 21,03</h2> 
+              </div>
+             
+            </div>
+    
+    
+            <div class=" flex-1">
+                <h1 class="text-[28px] mt-[40px] font-barlow font-semibold text-#FFFFFF">Payement</h1>
+               
+                <h2 class="text-[16px] mt-[8px] font-barlow font-semibold text-#ABBBC2">3 payment method available</h2>
+                <div class="border border-#393C49 mt-[24px] mr-[24px] mb-[24px]"></div>
+                <h1 class="text-#FFFFFF font-barlow font-semi-bold text-[20px]">Payment Method</h1>
+             <div class="flex mt-[16px] gap-[8px]">
+                <button class="relative bg-[#1F1D2B] text-white w-[101px] h-[64px] p-3 rounded-lg font-barlow text-sm border border-[#ABBBC2] flex flex-col items-center justify-center hover-bg-#EA7C69">
+                    <div class="flex justify-end w-full">
+                        <i class="fa-solid fa-circle-check text-#EA7C69 transform translate-y-[-50%] translate-x-[50%] hover-bg-#FFFFFF"></i> 
+                    </div>
+                    <i class="fa-solid fa-id-card mb-1"></i> 
+                    <span class="self-center w-full text-center">Credit Card</span>
+                </button>
+                 
+                    <button class=" bg-[#1F1D2B] text-white w-[101px] h-[64px] p-3 rounded-lg font-barlow text-sm border border-[#ABBBC2] flex flex-col items-center justify-center hover-bg-#EA7C69 " style="padding:  16px, 10px, 16px;" >
+                      
+                      <i class="fa-brands fa-paypal text-#ABBBC2 text-2xl"></i>
+                        <span class="self-center w-full text-center text-#ABBBC2  font-barlow font-normal text-[14px]"><a href="">Paypal</a></span>
+                    </button>
+                    <button class=" bg-[#1F1D2B] text-white w-[101px] h-[64px] p-3 rounded-lg font-barlow text-sm border border-[#ABBBC2] flex flex-col items-center justify-center hover-bg-#EA7C69 " style="padding:  16px, 10px, 16px;" >
+                      
+                      <i class="fa-solid fa-wallet text-#ABBBC2 text-2xl"></i>
+                        <span class="self-center w-full text-center text-#ABBBC2  font-barlow font-normal text-[14px]"><a href="">Paypal</a></span>
+                    </button>
+                </div>
+                <div class="mt-[16px]">
+                    <h2 class="font-medium font-barlow text-[14px] text-#FFFFFF">Cardholder Name</h2>
+                    <input type="text" placeholder="Levi Ackerman" class="w-[357px] h-[48px] rounded-[8px] p-[14px] border border-#393C49 bg-#2D303E mt-[8px]">
+                 </div>
+                <div class="mt-[16px]">
+                    <h2 class="font-[400] font-barlow text-[14px] text-#FFFFFF">Card Number</h2>
+                    <input type="text" placeholder="2564 1421 0897 1244" class="w-[357px] h-[48px] text-#E0E6E9 rounded-[8px] p-[14px] border border-#393C49 bg-#2D303E mt-[8px]">
+                 </div>
+                <div class="flex gap-[13px]">
+                    <div class="mt-[16px]">
+                        <h2 class="font-[400] font-barlow text-[14px] text-#FFFFFF">Expiration Date</h2>
+                        <input type="number" placeholder="02/2022" class="w-[172px] h-[48px] text-#E0E6E9 rounded-[8px] p-[14px] border border-#393C49 bg-#2D303E mt-[8px]">
+                     </div>
+                    <div class="mt-[16px]">
+                        <h2 class="font-[400] font-barlow text-[14px] text-#FFFFFF">CVV</h2>
+                        <input type="password" placeholder="..." class="w-[172px] h-[48px] text-#E0E6E9 rounded-[8px] p-[14px] border border-#393C49 bg-#2D303E mt-[8px]">
+                     </div>
+                    
+                </div>
+                <div class="mt-[16px] border border-#393C49"></div>
+                <div class="flex gap-[13px]">
+                    <div class="mt-[16px]">
+                        <h2 class="font-[400] font-barlow text-[14px] text-#FFFFFF">Order Type</h2>
+                        <button class="flex items-center mt[8px] whitespace-pre gap-[10px] bg-#1F1D2B text-#FFFFFF w-[172px] h-[48px] p-[14px] rounded-[8px] font-barlow font-normal text-medium hover-bg-#EA7C69 border border-#393C49"><i class="fa-solid fa-angle-down text-#FFFFFF"></i>Dine In</button>
+                    </div>
+                    <div class="mt-[16px]">
+                        <h2 class="font-[400] font-barlow text-[14px] text-#FFFFFF">Table no.</h2>
+                        <input type="password" placeholder="140" class="w-[172px] h-[48px] text-#E0E6E9 rounded-[8px] p-[14px] border border-#393C49 bg-#2D303E mt-[8px]">
+                     </div>
+                    
+                    </div>
+             </div>
+            
+            </div>
+    </div>
+  </div>
 
+
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
 </body>
 </html>
